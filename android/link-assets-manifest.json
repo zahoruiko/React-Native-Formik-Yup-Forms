@@ -1,0 +1,21 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Bitwise.ttf",
+      "sha1": "6a8c2a72a4000eda82932e86f0584921eed3224a"
+    },
+    {
+      "path": "assets/fonts/CheckBook0.ttf",
+      "sha1": "d0532e7524059a03ce3f4febbfa25bc057e8cc23"
+    },
+    {
+      "path": "assets/fonts/PlayfairDisplay-Regular.ttf",
+      "sha1": "27948bdf40b983e7e7405ae9dc101abc0c455c99"
+    },
+    {
+      "path": "assets/fonts/ZenDots-Regular.ttf",
+      "sha1": "77a272f37fd2c260477469b6fe8fa5c5dea890e9"
+    }
+  ]
+}
