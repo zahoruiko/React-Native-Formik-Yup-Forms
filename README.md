@@ -27,25 +27,25 @@ yarn start
 
 ## Results
 
-### Phone: Sign Up (Portrait)
+### iPhone: Sign Up (Portrait)
 
 <img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Portrait.png" width="240">
 
-### Phone: Sign Up (Landscape 1)
+### iPhone: Sign Up (Landscape 1)
 
-<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape1.png" width="240">
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape1.png" width="480">
 
-### Phone: Sign Up (Landscape 2)
+### iPhone: Sign Up (Landscape 2)
 
-<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape2.png" width="240">
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape2.png" width="480">
 
-### Phone: Sign In (Portrait)
+### iPhone: Sign In (Portrait)
 
 <img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignIn-Portrait.png" width="240">
 
-### Phone: Sign In (Landscape)
+### iPhone: Sign In (Landscape)
 
-<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignIn-Landscape.png" width="240">
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignIn-Landscape.png" width="480">
 
 ### Android tablet: Sign Up (Portrait)
 
@@ -53,7 +53,7 @@ yarn start
 
 ### Android tablet: Sign Up (Landscape)
 
-<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignUp-Landscape.png" width="360">
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignUp-Landscape.png" width="720">
 
 ### Android tablet: Sign In (Portrait)
 
@@ -61,4 +61,4 @@ yarn start
 
 ### Android tablet: Sign In (Landscape)
 
-<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignIn-Landscape.png" width="360">
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignIn-Landscape.png" width="720">
