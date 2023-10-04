@@ -1,14 +1,21 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
+# Example of a React Native Form using Formik and Yup
+
 # Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+## Install modules:
 
-## Step 1: Start the Metro Server
+```npm install```
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+### Install for iOS:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+```
+cd ios
+pod install
+```
+
+## Start
 
 ```bash
 # using npm
@@ -18,62 +25,40 @@ npm start
 yarn start
 ```
 
-## Step 2: Start your Application
+## Results
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+### Phone: Sign Up (Portrait)
 
-### For Android
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Portrait.png" width="240">
 
-```bash
-# using npm
-npm run android
+### Phone: Sign Up (Landscape 1)
 
-# OR using Yarn
-yarn android
-```
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape1.png" width="240">
 
-### For iOS
+### Phone: Sign Up (Landscape 2)
 
-```bash
-# using npm
-npm run ios
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignUp-Landscape2.png" width="240">
 
-# OR using Yarn
-yarn ios
-```
+### Phone: Sign In (Portrait)
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignIn-Portrait.png" width="240">
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+### Phone: Sign In (Landscape)
 
-## Step 3: Modifying your App
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Phone-SignIn-Landscape.png" width="240">
 
-Now that you have successfully run the app, let's modify it.
+### Android tablet: Sign Up (Portrait)
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignUp-Portrait.png" width="360">
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+### Android tablet: Sign Up (Landscape)
 
-## Congratulations! :tada:
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignUp-Landscape.png" width="360">
 
-You've successfully run and modified your React Native App. :partying_face:
+### Android tablet: Sign In (Portrait)
 
-### Now what?
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignIn-Portrait.png" width="360">
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+### Android tablet: Sign In (Landscape)
 
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+<img src="https://github.com/zahoruiko/React-Native-Formik-Yup-Forms/blob/main/readmeImages/Tablet-SignIn-Landscape.png" width="360">

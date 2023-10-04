@@ -7,6 +7,7 @@ import {
 import {
   Button,
   SafeAreaView,
+  ScrollView,
   StatusBar,
   StyleSheet,
   Text,
@@ -15,6 +16,7 @@ import {
 import * as yup from 'yup';
 
 import CustomInput from './CustomInput';
+import { isTablet } from '../utils/Device';
 
 const signUpValidationSchema = yup.object().shape({
   fullName: yup
@@ -23,6 +25,7 @@ const signUpValidationSchema = yup.object().shape({
     .required('Full name is required'),
   phoneNumber: yup
     .string()
+    // .matches(/[0-9().+ -]/, 'Enter a valid phone number')
     .matches(/(01)(\d){8}\b/, 'Enter a valid phone number')
     .required('Phone number is required'),
   email: yup
@@ -48,74 +51,76 @@ const SignUp = ({ navigation }) => {
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView style={styles.container}>
-        <View style={styles.signupContainer}>
-          <Text style={styles.formTitle}>Sign Up Screen</Text>
-          <Formik
-            validationSchema={signUpValidationSchema}
-            initialValues={{
-              fullName: '',
-              email: '',
-              phoneNumber: '',
-              password: '',
-              confirmPassword: '',
-            }}
-            onSubmit={
-              (values, { resetForm }) => {
-                console.log(values);
-                resetForm()
+        <ScrollView style={styles.scrollView}>
+          <View style={styles.signupContainer}>
+            <Text style={styles.formTitle}>Sign Up</Text>
+            <Formik
+              validationSchema={signUpValidationSchema}
+              initialValues={{
+                fullName: '',
+                email: '',
+                phoneNumber: '',
+                password: '',
+                confirmPassword: '',
+              }}
+              onSubmit={
+                (values, { resetForm }) => {
+                  console.log(values);
+                  resetForm()
+                }
               }
-            }
-          >
-            {({ handleSubmit, isValid }) => (
-              <>
-                <Field
-                  component={CustomInput}
-                  name="fullName"
-                  placeholder="Full Name"
-                />
-                <Field
-                  component={CustomInput}
-                  name="email"
-                  placeholder="Email Address"
-                  keyboardType="email-address"
-                />
-                <Field
-                  component={CustomInput}
-                  name="phoneNumber"
-                  placeholder="Phone Number"
-                  keyboardType="numeric"
-                />
-                <Field
-                  component={CustomInput}
-                  name="password"
-                  placeholder="Password"
-                  secureTextEntry
-                />
-                <Field
-                  component={CustomInput}
-                  name="confirmPassword"
-                  placeholder="Confirm Password"
-                  secureTextEntry
-                />
-                <View style={styles.buttonsWrapper}>
-                  <Button
-                    onPress={() => navigation.navigate('SignIn')}
-                    title="Sign In"
-                    uppercase={true}
-                    containerStyle={styles.button}
+            >
+              {({ handleSubmit, isValid }) => (
+                <>
+                  <Field
+                    component={CustomInput}
+                    name="fullName"
+                    placeholder="Full Name"
                   />
-                  <Button
-                    onPress={handleSubmit}
-                    title="Sign In"
-                    uppercase={false}
-                    disabled={!isValid}
-                    containerStyle={styles.button}
+                  <Field
+                    component={CustomInput}
+                    name="email"
+                    placeholder="Email Address"
+                    keyboardType="email-address"
                   />
-                </View>
-              </>
-            )}
-          </Formik>
-        </View>
+                  <Field
+                    component={CustomInput}
+                    name="phoneNumber"
+                    placeholder="Phone Number"
+                    keyboardType="numeric"
+                  />
+                  <Field
+                    component={CustomInput}
+                    name="password"
+                    placeholder="Password"
+                    secureTextEntry
+                  />
+                  <Field
+                    component={CustomInput}
+                    name="confirmPassword"
+                    placeholder="Confirm Password"
+                    secureTextEntry
+                  />
+                  <View style={styles.buttonsWrapper}>
+                    <Button
+                      onPress={() => navigation.navigate('SignIn')}
+                      title="Sign In"
+                      uppercase={true}
+                      containerStyle={styles.button}
+                    />
+                    <Button
+                      onPress={handleSubmit}
+                      title="Sign In"
+                      uppercase={false}
+                      disabled={!isValid}
+                      containerStyle={styles.button}
+                    />
+                  </View>
+                </>
+              )}
+            </Formik>
+          </View>
+        </ScrollView>
       </SafeAreaView>
     </>
   )
@@ -127,8 +132,10 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+  scrollView: {
+    width: isTablet() ? '50%' : '85%',
+  },
   signupContainer: {
-    width: '80%',
     alignItems: 'center',
     backgroundColor: 'white',
     backgroundColor: '#e6e6e6',
@@ -144,6 +151,10 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.25,
     shadowRadius: 3.84,
     elevation: 5,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginTop: isTablet() ? 110 : 30,
+    marginBottom: 30,
   },
   formTitle: {
     fontSize: 22,
