@@ -1,6 +1,6 @@
 This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
-# An example of an input form implementing using Formic and Yup in a React Native application
+# Example of an input form implementing using Formic and Yup in a React Native application
 
 # Getting Started
 
